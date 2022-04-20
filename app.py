@@ -1,6 +1,7 @@
 from flask import Flask, render_template,url_for, request
 import pickle
 import numpy as np
+from collections.abc import Mapping
 
 model = pickle.load(open('model.pkl', 'rb'))
 
